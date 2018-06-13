@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Broker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<!--IE Edge Meta TAg-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap cmd-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> 
+	 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!-- bootstarp scripts -->
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body>
+		<h1 style="text-align: center;color: #dd960d;margin-bottom: 20px;">RME</h1>
+	<div class="container header">
+		<span><a href="" >Real Estate</a></span>
+		<span><a href="" >Developer</a></span>
+		<span><a href="" >Brokers</a></span>
+		<span><a href="" >Broking House</a></span>
+		<span><a href="" >Lease</a></span>
+		<span><a href="" >Workspace</a></span>
+		<span><a href="" >IT</a></span>
+		<span><a href="" >Academics</a></span>
+	</div>	
+	<div class="container b-block">
+		<div class="row">
+			<div class="col-lg-7 col-md-7 col-sm-12" style="background: ;border-right: 2px solid #5e6991;">
+				<div class="container" style="background: white">
+					<h2>Brokers </h2>
+					<p>
+						A broker is an independent party, whose services are used extensively in some industries. A broker's prime responsibility is to bring sellers and buyers together and thus a broker is the third-person facilitator between a buyer and a seller. An example would be a real estate broker who facilitates the sale of a property.
+					</p>
+					<p>
+						Brokers also can furnish market information regarding prices, products, and market conditions. Brokers may represent either the seller or the buyer but not both at the same time. An example would be a stockbroker, who makes the sale or purchase of securities on behalf of his client. Brokers play a huge role in the sale of stocks, bonds, and other financial services.
+					</p>
+					<p>
+						There are advantages to using a broker. First, they know their market and have already established relations with prospective accounts. Brokers have the tools and resources to reach the largest possible base of buyers. They then screen these potential buyers for revenue that would support the potential acquisition. An individual producer, on the other hand, especially one new in the market, probably will not have the same access to customers as a broker. Another benefit of using a broker is cost—they might be cheaper in smaller markets, with smaller accounts, or with a limited line of products.
+					</p>
+					<!-- <a href="#"><button>SignUp</button></a> -->
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-12 ls-block" style="">
+				<div class="container">
+					<div class="row">
+						<div class="col ls-btn" style="background: ;height: 50px;">
+							<button onclick="open_tab('login')">Login</button>
+						</div>
+						<div class="col ls-btn" style="background: ;height: 50px;">
+							<button onclick="open_tab('signup')">SignUp</button>
+						</div>
+					</div>
+					<div id="login">
+
+						<form action="" method="post">
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-user"></i></span>
+								<input type="text" name="br_name" placeholder="User Name" class="form-control" required="">
+							</div>
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-lock"></i></span>
+								<input type="password" name="pass" placeholder="Password" class="form-control" required="">
+							</div>
+							<div class="form-group">
+								<input type="submit" name="login-btn" class="btn btn-success" value="Login">
+							</div>
+							New User?<a href="">SignUp</a><a href="#">Forget Password?</a>
+						</form>
+					</div>
+					<div id="signin">
+						<form action="" method="post" enctype="multipart/form-data">
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-user"></i></span>
+								<input type="text" name="br_name" placeholder="User Name" class="form-control" required="">
+							</div>
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-building"></i></span>
+								<input type="text" name="company" placeholder="Company" class="form-control" required="">
+							</div>
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-users"></i></span>
+								<select name="assoc" class="form-control">
+									<option>Select association with company</option>
+									<option value="">Proprietor</option>
+									<option value="">Promotor</option>
+									<option value="">Patner</option>
+									<option value="">Director</option>
+								</select>
+							</div>
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-envelope"></i></span>
+								<input type="email" name="email" placeholder="Email" class="form-control" required="">
+							</div>
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-lock"></i></span>
+								<input type="password" name="pass" placeholder="Password" class="form-control" required="">
+							</div>
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly"><i class="fas fa-lock"></i></span>
+								<input type="password" name="pass" placeholder="Confirm Password" class="form-control" required="">
+							</div>
+							<div class="form-group input-group-btn input-area">
+								<span class="input-group-addon gly" style="font-size: 23px;"><i class="fas fa-id-card"></i></span>
+								<input type="file" name="certify" placeholder="Upload file" class="form-control" required=""  accept=".jpg, .jpeg, .png">
+							</div>
+							<div class="form-group">
+								<input type="submit" name="signup-btn" value="SignUp" class=" btn btn-success">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="color: white;margin-bottom: 20px;">
+		<div class="container footer">
+			<span>&copy</span>
+            <span><a href="">2018 RME</a></span>
+            <span class="lt"><a href="#"><i class="fab fa-google-plus-g"></i></a></span>
+            <span class="lt"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="lt"><a href="">Contact Us</a></span>
+            <span class="lt"><a href="">Builders</a></span>
+            <span class="lt"><a href="">IT</a></span>
+            <span class="lt"><a href="">Developers</a></span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function open_tab(id){
+			id.style.display="block";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body{
+	   background: linear-gradient(to top right,#333,#333);
+}
+.b-block{
+	padding: 20px;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 2px;
+    margin:40px 0 40px 0;
+    background-color: white;
+}
+.ls-btn{
+	text-align: center;
+}
+form{
+	text-align: center;
+}
+.ls-btn button{
+	width: 100%;
+}
+#login , #signup {
+	margin-top: 10px;
+}
+#signup{
+	display: block;
+}
+.input-area{
+	position: relative;
+}
+.gly{
+	position: absolute;
+    left: 8px;
+    top: 5px;
+    color: #dd960d;
+}
+.header{
+	text-align: center;
+	/*padding-bottom: 40px;
+	border-bottom: 2px solid white;*/
+}
+.footer{
+	border-top: 2px solid #dd960d;
+    padding: 10px 0;
+}
+.header span a{
+	margin: 0 30px
+}
+.footer span a, .header span a{
+	color: white;
+	font-weight: 500;
+	margin-left: 20px;
+}
+.lt{
+	float: right;
+}
+.btn-success{
+	width: 25% !important;
+}
+.form-control{
+	    padding: .375rem 1.8rem !important;
+}
+#login a{
+	margin-right: 35px;
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 1250px !important;
+}
+}
