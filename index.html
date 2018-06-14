@@ -31,8 +31,8 @@
 	</div>	
 	<div class="container b-block">
 		<div class="row">
-			<div class="col-lg-7 col-md-7 col-sm-12" style="background: ;border-right: 2px solid #5e6991;">
-				<div class="container" style="background: white">
+			<div class="col-lg-7 col-md-7 col-sm-12 bloker">
+				<div class="container">
 					<h2>Brokers </h2>
 					<p>
 						A broker is an independent party, whose services are used extensively in some industries. A broker's prime responsibility is to bring sellers and buyers together and thus a broker is the third-person facilitator between a buyer and a seller. An example would be a real estate broker who facilitates the sale of a property.
@@ -41,7 +41,7 @@
 						Brokers also can furnish market information regarding prices, products, and market conditions. Brokers may represent either the seller or the buyer but not both at the same time. An example would be a stockbroker, who makes the sale or purchase of securities on behalf of his client. Brokers play a huge role in the sale of stocks, bonds, and other financial services.
 					</p>
 					<p>
-						There are advantages to using a broker. First, they know their market and have already established relations with prospective accounts. Brokers have the tools and resources to reach the largest possible base of buyers. They then screen these potential buyers for revenue that would support the potential acquisition. An individual producer, on the other hand, especially one new in the market, probably will not have the same access to customers as a broker. Another benefit of using a broker is cost—they might be cheaper in smaller markets, with smaller accounts, or with a limited line of products.
+						There are advantages to using a broker. First, they know their market and have already established relations with prospective accounts. Brokers have the tools and resources to reach the largest possible base of buyers. They then screen these potential buyers for revenue that would support the potential acquisition.
 					</p>
 					<!-- <a href="#"><button>SignUp</button></a> -->
 				</div>
@@ -49,11 +49,11 @@
 			<div class="col-lg-5 col-md-5 col-sm-12 ls-block" style="">
 				<div class="container">
 					<div class="row">
-						<div class="col ls-btn" style="background: ;height: 50px;">
-							<button onclick="open_tab('login')">Login</button>
+						<div class="col ls-btn" style="padding-right: 0;">
+							<button id="l-btn" class="active" onclick="open_l()">Login</button>
 						</div>
-						<div class="col ls-btn" style="background: ;height: 50px;">
-							<button onclick="open_tab('signup')">SignUp</button>
+						<div class="col ls-btn" style="padding-left: 0;" >
+							<button id="s-btn" onclick="open_s()">SignUp</button>
 						</div>
 					</div>
 					<div id="login">
@@ -70,10 +70,10 @@
 							<div class="form-group">
 								<input type="submit" name="login-btn" class="btn btn-success" value="Login">
 							</div>
-							New User?<a href="">SignUp</a><a href="#">Forget Password?</a>
+							New User?<a href="#" onclick="open_s()">SignUp</a><a href="#">Forget-Password?</a>
 						</form>
 					</div>
-					<div id="signin">
+					<div id="signup">
 						<form action="" method="post" enctype="multipart/form-data">
 							<div class="form-group input-group-btn input-area">
 								<span class="input-group-addon gly"><i class="fas fa-user"></i></span>
@@ -120,7 +120,7 @@
 	</div>
 	<div class="container-fluid" style="color: white;margin-bottom: 20px;">
 		<div class="container footer">
-			<span>&copy</span>
+			<span style="color: #333;font-weight: 900">&copy</span>
             <span><a href="">2018 RME</a></span>
             <span class="lt"><a href="#"><i class="fab fa-google-plus-g"></i></a></span>
             <span class="lt"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
@@ -131,9 +131,24 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		function open_tab(id){
-			id.style.display="block";
+		var login = document.getElementById('login');
+		var signup = document.getElementById('signup');
+
+		function open_l(){
+			login.style.display="block";
+			signup.style.display="none";
+
+			$('#s-btn').removeClass("active");
+			$('#l-btn').addClass("active");
 		}
+
+		function open_s(){
+			signup.style.display="block";
+			login.style.display="none";
+
+			$('#s-btn').addClass("active");
+			$('#l-btn').removeClass("active");
+	}
 	</script>
 </body>
 </html>

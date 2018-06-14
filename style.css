@@ -1,12 +1,16 @@
 body{
-	   background: linear-gradient(to top right,#333,#333);
+	   background:#f4f4f4;
 }
 .b-block{
 	padding: 20px;
-    box-shadow: 0px 0px 10px #333;
+	color: #f4f4f4;
     border-radius: 2px;
     margin:40px 0 40px 0;
-    background-color: white;
+    background-image:  linear-gradient(to right bottom, rgba(101, 150, 147, 0.79), rgba(75, 99, 105, 0.8)), url(broker.png);
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: center;
+
 }
 .ls-btn{
 	text-align: center;
@@ -14,14 +18,32 @@ body{
 form{
 	text-align: center;
 }
+.active{
+	background-color: #3d8f50 !important;
+}
 .ls-btn button{
 	width: 100%;
+    border: unset;
+    padding: 5px;
+    height: 37px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background:unset;
 }
+.ls-btn button:hover{
+	text-shadow: 1px 2px 1px #333333;
+}
+
 #login , #signup {
 	margin-top: 10px;
 }
 #signup{
-	display: block;
+	display: none;
+}
+.bloker{
+	border-right: 2px solid #dd960d;
 }
 .input-area{
 	position: relative;
@@ -45,7 +67,7 @@ form{
 	margin: 0 30px
 }
 .footer span a, .header span a{
-	color: white;
+	color: #333;
 	font-weight: 500;
 	margin-left: 20px;
 }
@@ -61,8 +83,23 @@ form{
 #login a{
 	margin-right: 35px;
 }
-@media (min-width: 1200px){
-.container {
-    max-width: 1250px !important;
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+	.bloker{
+		margin-bottom: 20px;
+		border-right: unset;
+		border-bottom: 2px solid #dd960d;
+	}
 }
+
+@media (min-width: 1200px){
+	.container {
+		    max-width: 1250px !important;
+	}
 }
