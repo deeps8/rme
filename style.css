@@ -20,6 +20,8 @@ form{
 }
 .active{
 	background-color: #3d8f50 !important;
+	box-shadow: -3px 3px 3px #333;
+
 }
 .ls-btn button{
 	width: 100%;
@@ -31,6 +33,7 @@ form{
     font-weight: 500;
     cursor: pointer;
     background:unset;
+    outline: unset !important;
 }
 .ls-btn button:hover{
 	text-shadow: 1px 2px 1px #333333;
@@ -81,10 +84,29 @@ form{
 	    padding: .375rem 1.8rem !important;
 }
 #login a{
-	margin-right: 35px;
+	margin-right: 7%;
+    color: #dd960d;
+    font-weight: 500;
 }
-
-
+.custom-file{
+	margin-bottom: 20px !important;
+	text-align: left;
+	cursor:pointer;
+}
+.file-alt{
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.8rem;
+    line-height: 1.5;
+    color: #787a7d;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
 
 
 
@@ -99,7 +121,7 @@ form{
 }
 
 @media (min-width: 1200px){
-	.container {
+	/*.container {
 		    max-width: 1250px !important;
-	}
+	}*/
 }
