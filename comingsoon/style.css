@@ -1,0 +1,43 @@
+body{
+	color: white !important;
+	background-image:  linear-gradient(to right bottom, rgba(58, 59, 85, 0.79), rgba(46, 100, 97, 0.57)), url(bg.png);
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: center; 
+    word-spacing: 9px;
+}
+p{
+	font-weight: 500;
+	font-size: 20px;
+	margin: 0 !important;
+}
+li{
+	text-align: center;
+	margin: 2% 2% 0 2%;
+	background: #2e702eb0;
+	font-size: 20px;
+	text-shadow: 2px 2px 5px #333;
+	font-weight: 600;
+	padding: 9px;
+}
+.container{
+	margin-top: 15%;
+}
+span{
+	font-size: 15px;
+	font-weight: 500;
+}
+#comm{
+	font-size: 30px;
+    color: #dd960d;
+    font-family: arial;
+    letter-spacing: -2px;
+}
+.soon{
+	font-size: 40px;
+    font-family: arial;
+    letter-spacing: -3px;
+}
+.nav  h2{
+	margin-top: 20px;
+}
